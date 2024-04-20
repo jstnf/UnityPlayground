@@ -8,13 +8,11 @@ public class Spin : MonoBehaviour
     public float speed = 50.0f;
     public Vector3 rotationAxis = Vector3.up;
 
-    // Start is called before the first frame update
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.Rotate(rotationAxis, speed * Time.deltaTime);
